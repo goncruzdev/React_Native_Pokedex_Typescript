@@ -1,11 +1,14 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+// import Icon from 'react-native-vector-icons/Ionicons';
+import {NavigationContainer} from '@react-navigation/native';
+import 'react-native-gesture-handler';
+import Navigator from './src/navigation/StackNavigation';
 
 const App = () => {
   return (
-    <>
-      <Text>App Pokemon</Text>
-    </>
+    <NavigationContainer>
+      <Navigator />
+    </NavigationContainer>
   );
 };
 
